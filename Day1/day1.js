@@ -21,6 +21,18 @@ for (let i = 1; i < lines.length; i++) {
 
 console.log(increased);
 
+let increased2 = 0;
+
+for (let i = 3; i < lines.length; i++) {
+    const last = lines[i - 1] + lines[i - 2] + lines[i - 3];
+    const current = lines[i] + lines[i - 1] + lines[i - 2];
+    if (current > last) {
+        increased2++;
+    }
+}
+
+console.log(increased2);
+
 
 
 
